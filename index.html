@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Happy Birthday Rayi 🎂</title>
+  <meta name="description" content="Selamat Ulang Tahun Rayi Rizkia — 28 Oktober, from Kekey ♡" />
+  <meta name="robots" content="noindex, nofollow" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400;1,600&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&family=Dancing+Script:wght@500;600;700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- ═══════ PASSCODE GATE OVERLAY (PIN: 281004) ═══════ -->
+  <div class="passcode-gate" id="passcodeGate">
+    <div class="paper-bg bg-gingham-bow"></div>
+    <div class="passcode-card" id="passcodeCard">
+      <div class="tape t-bow tape-top"></div>
+      <div class="passcode-lock-icon" id="passcodeLockIcon">🔒</div>
+      <p class="passcode-sub">surat rahasia dari kekey ♡</p>
+      <h2 class="passcode-title">Masukkan PIN</h2>
+      <p class="passcode-clue">clue: tanggal lahir kamu (DDMMYY) ✨</p>
+
+      <!-- 6 PIN Dots Indicator -->
+      <div class="pin-display" id="pinDisplay">
+        <span class="pin-dot"></span>
+        <span class="pin-dot"></span>
+        <span class="pin-dot"></span>
+        <span class="pin-dot"></span>
+        <span class="pin-dot"></span>
+        <span class="pin-dot"></span>
+      </div>
+
+      <div class="pin-error-msg" id="pinErrorMsg"></div>
+
+      <!-- Keypad (Touch & Click Friendly) -->
+      <div class="pin-keypad">
+        <button class="pin-key" type="button" data-val="1">1</button>
+        <button class="pin-key" type="button" data-val="2">2</button>
+        <button class="pin-key" type="button" data-val="3">3</button>
+        <button class="pin-key" type="button" data-val="4">4</button>
+        <button class="pin-key" type="button" data-val="5">5</button>
+        <button class="pin-key" type="button" data-val="6">6</button>
+        <button class="pin-key" type="button" data-val="7">7</button>
+        <button class="pin-key" type="button" data-val="8">8</button>
+        <button class="pin-key" type="button" data-val="9">9</button>
+        <button class="pin-key pin-clear" type="button" id="pinClearBtn" title="Hapus Semua">✕</button>
+        <button class="pin-key" type="button" data-val="0">0</button>
+        <button class="pin-key pin-backspace" type="button" id="pinBackspaceBtn" title="Hapus Satu">⌫</button>
+      </div>
+
+      <p class="passcode-hint-note">hanya untuk Rayi Rizkia 🤍</p>
+    </div>
+  </div>
+
+  <div class="journal">
+
+    <!-- ═══════ COVER — PHOTO BACKGROUND ═══════ -->
+    <section class="page cover" id="cover">
+      <div class="cover-photo-bg">
+        <img src="assets/love.png" alt="Us" />
+        <div class="cover-overlay"></div>
+      </div>
+
+      <!-- Dekorasi rame -->
+      <div class="deco d-star1">⭐</div>
+      <div class="deco d-star2">✦</div>
+      <div class="deco d-star3">★</div>
+      <div class="deco d-star4">✨</div>
+      <div class="deco d-heart1">♥</div>
+      <div class="deco d-heart2">♡</div>
+      <div class="deco d-heart3">💙</div>
+      <div class="deco d-sparkle1">✧</div>
+      <div class="deco d-sparkle2">✦</div>
+
+      <div class="washi w-cover1"></div>
+      <div class="washi w-cover2"></div>
+      <div class="washi w-cover3"></div>
+
+      <div class="cover-center">
+        <div class="cover-tag">28 Oktober 2004</div>
+        <h1 class="cover-title">
+          <span class="ct-line1">happy birthday,</span>
+          <span class="ct-name">Rayi Rizkia</span>
+        </h1>
+        <div class="cover-patches">
+          <span class="patch p-bow">my favorite person</span>
+          <span class="patch p-juniper">always & forever</span>
+          <span class="patch p-leaf">from: kekey ♡</span>
+        </div>
+      </div>
+
+      <div class="scroll-down">scroll ke bawah ↓</div>
+    </section>
+
+    <!-- ═══════ ABOUT ═══════ -->
+    <section class="page about-page" id="about">
+      <div class="paper-bg bg-polkadot"></div>
+      <div class="gingham-edge gingham-top"></div>
+      <div class="gingham-edge gingham-bottom"></div>
+
+      <!-- Dekorasi vintage palette -->
+      <div class="deco d-bow1">🎀</div>
+      <div class="deco d-leaf1">🌿</div>
+      <div class="deco d-star1">✦</div>
+      <div class="deco d-star2">✧</div>
+      <div class="deco d-heart1">🤎</div>
+      <div class="deco d-heart2">🤍</div>
+      <div class="deco d-stamp1">🏷️</div>
+      <div class="deco d-leaf2">🍃</div>
+      <div class="washi w-about1"></div>
+      <div class="washi w-about2"></div>
+
+      <h2 class="sec-title">Things I love about you</h2>
+
+      <div class="patches-cloud">
+        <span class="patch p-bow tilt-l">pemberani ♥</span>
+        <span class="patch p-leaf tilt-r">pinter banget</span>
+        <span class="patch p-juniper tilt-l">senyumnya bikin tenang</span>
+        <span class="patch p-wood tilt-r">semangat terus</span>
+        <span class="patch p-bow tilt-l">hatinya hangat</span>
+        <span class="patch p-juniper tilt-r">big dreamer ✦</span>
+        <span class="patch p-leaf tilt-sl">kamu tuh unik</span>
+        <span class="patch p-wood tilt-l">selalu ada buat aku</span>
+        <span class="patch p-bow tilt-r">superhero versi aku</span>
+        <span class="patch p-leaf tilt-sl">nggak ada duanya ♡</span>
+      </div>
+
+      <div class="torn-note">
+        <p>Rayi tuh orangnya beda. Bukan cuma pinter di kampus — anak teknik listrik yang serius tapi tetep hangat.
+          Kalau udah ngomongin Persib matanya langsung beda, kalau ada film Marvel baru pasti yang pertama ajak nonton.
+          Dan kalau lagi baca buku, dunianya sendiri banget.</p>
+        <p>Kamu tuh <em>real life superhero</em> versi aku. 🌿</p>
+      </div>
+
+      <!-- Rayi Through The Years — Dual Polaroids with Real Assets -->
+      <div class="about-polaroid-row">
+        <div class="polaroid pol-baby tilt-l">
+          <div class="pol-img">
+            <img src="assets/littlerayi.png" alt="Little Rayi" class="real-photo-img" />
+          </div>
+          <p class="pol-cap">little rayi 🥺</p>
+          <div class="tape t-leaf"></div>
+        </div>
+
+        <div class="polaroid pol-us tilt-r">
+          <div class="pol-img">
+            <img src="assets/love.png" alt="Rayi and Kekey" class="real-photo-img" />
+          </div>
+          <p class="pol-cap">my favorite guy ♡</p>
+          <div class="tape t-bow"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════ GALLERY ═══════ -->
+    <section class="page gallery-page" id="gallery">
+      <div class="paper-bg bg-gingham-bow"></div>
+
+      <div class="deco d-leaf3">🌿</div>
+      <div class="deco d-bow2">🎀</div>
+      <div class="deco d-star3">✦</div>
+      <div class="deco d-star4">★</div>
+      <div class="deco d-heart3">🤎</div>
+      <div class="deco d-sparkle1">✧</div>
+      <div class="deco d-camera">📷</div>
+      <div class="washi w-gal1"></div>
+      <div class="washi w-gal2"></div>
+      <div class="washi w-gal3"></div>
+
+      <h2 class="sec-title">Our Moments Album 📖</h2>
+      <p class="sec-sub">klik lembaran buku untuk membuka cerita kenangan kita ♡</p>
+
+      <!-- ════════ INTERACTIVE SCRAPBOOK PHOTO ALBUM ════════ -->
+      <div class="scrapbook-album" id="scrapbookAlbum">
+        <!-- Spiral Binder Spine -->
+        <div class="album-spine">
+          <span class="spine-ring"></span>
+          <span class="spine-ring"></span>
+          <span class="spine-ring"></span>
+          <span class="spine-ring"></span>
+          <span class="spine-ring"></span>
+          <span class="spine-ring"></span>
+        </div>
+
+        <!-- Album Pages Container -->
+        <div class="album-book" id="albumBook">
+          <!-- Page 1 -->
+          <div class="album-spread active" data-page="1">
+            <div class="album-page-left">
+              <div class="album-photo-frame">
+                <div class="photo-corner pc-tl"></div>
+                <div class="photo-corner pc-tr"></div>
+                <div class="photo-corner pc-bl"></div>
+                <div class="photo-corner pc-br"></div>
+                <div class="dummy-img di-2"></div>
+                <div class="tape t-bow tape-album"></div>
+              </div>
+              <span class="page-date-tag">Chapter 01 · Awal Cerita</span>
+            </div>
+            <div class="album-page-right">
+              <div class="album-note-content">
+                <h3 class="album-chapter-title">The Beginning ♡</h3>
+                <p class="album-story">Waktu pertama kenal kamu, aku langsung ngerasa ada yang beda dari cara kamu
+                  ngomong dan ketawa. Dari hal-hal sederhana sampai ngobrol berjam-jam yang nggak pernah kerasa
+                  ngebosenin.</p>
+                <div class="album-stamp">FIRST MET · 2024</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Page 2 -->
+          <div class="album-spread" data-page="2">
+            <div class="album-page-left">
+              <div class="album-photo-frame">
+                <div class="photo-corner pc-tl"></div>
+                <div class="photo-corner pc-tr"></div>
+                <div class="photo-corner pc-bl"></div>
+                <div class="photo-corner pc-br"></div>
+                <div class="dummy-img di-3"></div>
+                <div class="tape t-leaf tape-album"></div>
+              </div>
+              <span class="page-date-tag">Chapter 02 · Momen Jalan Bareng</span>
+            </div>
+            <div class="album-page-right">
+              <div class="album-note-content">
+                <h3 class="album-chapter-title">Jalan Bareng & Ketawa</h3>
+                <p class="album-story">Momen jalan bareng kamu selalu jadi favorit aku. Mau cuma nyari makan,
+                  muter-muter sore, atau cuma duduk dengerin kamu cerita. Semuanya berasa tenang dan bikin hati hangat.
+                </p>
+                <div class="album-stamp">PRECIOUS MOMENTS</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Page 3 -->
+          <div class="album-spread" data-page="3">
+            <div class="album-page-left">
+              <div class="album-photo-frame">
+                <div class="photo-corner pc-tl"></div>
+                <div class="photo-corner pc-tr"></div>
+                <div class="photo-corner pc-bl"></div>
+                <div class="photo-corner pc-br"></div>
+                <div class="dummy-img di-4"></div>
+                <div class="tape t-juniper tape-album"></div>
+              </div>
+              <span class="page-date-tag">Chapter 03 · Dunia Kamu</span>
+            </div>
+            <div class="album-page-right">
+              <div class="album-note-content">
+                <h3 class="album-chapter-title">Persib, Marvel & Buku ⚡</h3>
+                <p class="album-story">Aku suka banget ngeliat kamu yang antusias pas ngomongin taktik Persib, analisis
+                  superhero Marvel, atau pas kamu lagi fokus baca buku. Kamu keren banget dengan semua hal yang kamu
+                  suka.</p>
+                <div class="album-stamp">MY SUPERHERO</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Page 4 -->
+          <div class="album-spread" data-page="4">
+            <div class="album-page-left">
+              <div class="album-photo-frame">
+                <div class="photo-corner pc-tl"></div>
+                <div class="photo-corner pc-tr"></div>
+                <div class="photo-corner pc-bl"></div>
+                <div class="photo-corner pc-br"></div>
+                <div class="dummy-img di-6"></div>
+                <div class="tape t-wood tape-album"></div>
+              </div>
+              <span class="page-date-tag">Chapter 04 · Always & Forever</span>
+            </div>
+            <div class="album-page-right">
+              <div class="album-note-content">
+                <h3 class="album-chapter-title">My Favorite Person ♡</h3>
+                <p class="album-story">Makasih udah hadir dan jadi bagian paling indah di hidup aku. Semoga cerita kita
+                  masih panjang banget dan halaman-halaman berikutnya makin penuh dengan kebahagiaan.</p>
+                <div class="album-stamp">ALWAYS RAYI ♡</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Album Navigation Controls -->
+        <div class="album-controls">
+          <button id="albumPrev" class="btn-album-nav" title="Halaman sebelumnya">◂ Lembar Sebelumnya</button>
+          <div class="album-dots" id="albumDots">
+            <span class="dot active" data-index="1"></span>
+            <span class="dot" data-index="2"></span>
+            <span class="dot" data-index="3"></span>
+            <span class="dot" data-index="4"></span>
+          </div>
+          <button id="albumNext" class="btn-album-nav" title="Halaman selanjutnya">Lembar Selanjutnya ▸</button>
+        </div>
+      </div>
+
+      <!-- ════ PHOTOBOOTH PRINTER MACHINE (CLICK TO EJECT) ════ -->
+      <div class="photobooth-machine-container">
+        <div class="printer-box">
+          <div class="printer-header">
+            <div class="printer-brand">
+              <span class="printer-icon">🖨️</span>
+              <span class="printer-title">PHOTOBOOTH INSTANT PRINTER</span>
+            </div>
+            <div class="printer-status-light">
+              <span class="led-dot" id="printerLed"></span>
+              <span class="led-text" id="printerStatusText">READY TO PRINT</span>
+            </div>
+          </div>
+
+          <!-- Action Button: Click to Print Once -->
+          <div class="printer-action-row">
+            <button id="printTriggerBtn" class="btn-print-trigger" type="button">
+              <span class="btn-print-icon">🖨️</span> Cetak Foto Strip Kita ✦
+            </button>
+          </div>
+
+          <!-- Celah Slot Kertas Tempat Foto Keluar -->
+          <div class="printer-slot-unit">
+            <div class="slot-shadow-inset">
+              <div class="slot-opening"></div>
+            </div>
+
+            <!-- Photostrip Paper (Hidden initially, slides out on click) -->
+            <div class="photostrip-slot-track">
+              <div class="photostrip-sheet" id="photostripPaper">
+                <div class="tear-notch"></div>
+                <div class="photobooth-strip">
+                  <div class="strip-header">
+                    <span class="sh-title">PHOTOBOOTH STRIP</span>
+                    <span class="sh-date">28 · 10 · 2024</span>
+                  </div>
+                  <div class="pb-frame">
+                    <div class="dummy-img di-8"></div><span class="frame-tag">01</span>
+                  </div>
+                  <div class="pb-frame">
+                    <div class="dummy-img di-9"></div><span class="frame-tag">02</span>
+                  </div>
+                  <div class="pb-frame">
+                    <div class="dummy-img di-10"></div><span class="frame-tag">03</span>
+                  </div>
+                  <div class="pb-frame">
+                    <div class="dummy-img di-11"></div><span class="frame-tag">04</span>
+                  </div>
+                  <div class="strip-footer">
+                    <p class="pb-label">rayi & kekey ♡</p>
+                    <p class="pb-sublabel">always & forever</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════ LETTER ═══════ -->
+    <section class="page letter-page" id="letter">
+      <div class="paper-bg bg-stripes-wood"></div>
+      <div class="gingham-edge gingham-top"></div>
+      <div class="gingham-edge gingham-bottom"></div>
+
+      <div class="deco d-star5">✦</div>
+      <div class="deco d-heart4">🤎</div>
+      <div class="deco d-leaf4">🌿</div>
+      <div class="deco d-bow3">🎀</div>
+      <div class="deco d-star6">✧</div>
+      <div class="washi w-letter1"></div>
+      <div class="washi w-letter2"></div>
+
+      <h2 class="sec-title">Surat buat kamu 💌</h2>
+      <p class="sec-sub">sebuah surat cinta kecil yang tersimpan di dalam amplop ♡</p>
+
+      <!-- ════ CLEAR & ELEGANT SCRAPBOOK ENVELOPE ════ -->
+      <div class="letter-envelope-wrapper" id="letterEnvelopeWrapper">
+
+        <!-- STATE 1: Real Vintage Envelope (Closed) -->
+        <div class="vintage-envelope-card" id="vintageEnvelopeCard">
+          <div class="envelope-flap-decor"></div>
+          <div class="envelope-stamp-vintage">
+            <span class="stamp-icon">💌</span>
+            <span class="stamp-txt">AIR MAIL · 28.10</span>
+          </div>
+
+          <div class="envelope-addressed-to">
+            <p class="env-to-label">Khusus Untuk:</p>
+            <h3 class="env-to-name">Rayi Rizkia ♡</h3>
+            <p class="env-from-name">dari: Kekey</p>
+          </div>
+
+          <div class="envelope-seal-action">
+            <div class="wax-seal-btn" id="waxSealBtn" title="Buka Amplop Surat">
+              <span class="wax-seal-stamp">R ♡ K</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- STATE 2: The Letter (Emerges from envelope cleanly) -->
+        <div class="unfolded-letter-card hidden-letter" id="unfoldedLetterCard">
+          <div class="letter-clip">📎</div>
+          <div class="tape t-wood tape-top"></div>
+
+          <div class="letter-body">
+            <p class="l-hi">Rayi sayang,</p>
+            <p>Selamat ulang tahun ya ♡</p>
+            <p>Aku tau kamu orangnya nggak suka yang lebay-lebay, tapi hari ini spesial jadi bolehlah ya aku sedikit
+              cheesy.</p>
+            <p>Makasih udah jadi orang yang selalu ada. Yang sabar banget sama aku, yang selalu support, yang bikin
+              hari-hari aku lebih berwarna. Kadang aku nggak bisa ungkapin langsung, tapi percaya deh — aku bersyukur
+              banget punya kamu.</p>
+            <p>Aku suka kamu yang semangat banget kalau ngomongin Persib, yang bisa ngejelasin hal-hal soal kelistrikan
+              yang aku nggak ngerti, yang excited kalau ada film Marvel baru, yang suka tenggelam di buku. Semua sisi
+              kamu tuh bikin aku makin sayang.</p>
+            <p>Di umur yang baru ini, aku cuma mau kamu tau — kamu layak dapet semua hal baik di dunia. Semoga kuliahnya
+              lancar, impiannya kejadian satu per satu, dan kita bisa terus kayak gini.</p>
+            <p>Aku sama kamu, kamu sama aku.</p>
+            <p class="l-end">Selalu sayang kamu,</p>
+            <p class="l-sign">Kekey ♡</p>
+          </div>
+
+          <button class="btn-close-envelope" id="closeEnvelopeBtn" type="button">
+            ✉️ Lipat Kembali ke Amplop
+          </button>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ═══════ WISHES (CLEAN CANDLE BACKGROUND — NO TABRAKAN) ═══════ -->
+    <section class="page wishes-page-clean" id="wishes">
+      <div class="paper-bg bg-candle-clean"></div>
+      <div class="gingham-edge gingham-top"></div>
+
+      <div class="deco d-star7">★</div>
+      <div class="deco d-heart5">🤎</div>
+      <div class="deco d-leaf5">🍃</div>
+      <div class="deco d-bow4">🎀</div>
+      <div class="deco d-sparkle2">✧</div>
+      <div class="washi w-wish1"></div>
+      <div class="washi w-wish2"></div>
+
+      <h2 class="sec-title" style="color:var(--bow);">Birthday Wishes & Doa 🌿</h2>
+      <p class="sec-sub">harapan tulus dari Kekey untuk lembaran umur barumu</p>
+
+      <!-- Clean High-Contrast Wish Cards Grid (No Clash with Background!) -->
+      <div class="wishes-cards-grid">
+        <div class="wish-card-memo">
+          <div class="tape t-bow"></div>
+          <div class="wish-card-inner">
+            <span class="wish-icon-badge">🌟 01</span>
+            <p class="wish-text">Semoga tahun ini jadi tahun yang paling indah buat kamu. Lebih banyak ketawa, lebih
+              banyak momen-momen yang bikin hati hangat — dan semoga aku selalu jadi bagian dari itu.</p>
+          </div>
+        </div>
+
+        <div class="wish-card-memo">
+          <div class="tape t-leaf"></div>
+          <div class="wish-card-inner">
+            <span class="wish-icon-badge">⚡ 02</span>
+            <p class="wish-text">Semoga kuliahnya lancar terus ya, biar cepet wisuda dan bikin bangga semua orang. Anak
+              teknik listrik paling keren sedunia mah kamu.</p>
+          </div>
+        </div>
+
+        <div class="wish-card-memo">
+          <div class="tape t-juniper"></div>
+          <div class="wish-card-inner">
+            <span class="wish-icon-badge">⚽ 03</span>
+            <p class="wish-text">Semoga sehat selalu dan nggak pernah kehilangan semangat yang bikin kamu jadi kamu. Dan
+              semoga Persib juara biar kamu tambah happy. Dan semoga Marvel bikin film yang makin bagus biar kita nonton
+              bareng terus.</p>
+          </div>
+        </div>
+
+        <div class="wish-card-memo">
+          <div class="tape t-wood"></div>
+          <div class="wish-card-inner">
+            <span class="wish-icon-badge">🤍 04</span>
+            <p class="wish-text">Dan yang paling penting — semoga kamu selalu tau bahwa kamu dicintai. Sama aku, sama
+              keluarga, sama orang-orang di sekitar kamu. Kamu berharga banget.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="age-circle">
+        <span class="age-num" id="ageNum">21</span>
+        <span class="age-lbl">& fabulous ✦</span>
+      </div>
+    </section>
+
+    <!-- ═══════ MESSAGE BOARD ═══════ -->
+    <section class="page msg-page" id="message">
+      <div class="paper-bg bg-lined-candle"></div>
+      <div class="gingham-edge gingham-top"></div>
+
+      <div class="deco d-star8">✧</div>
+      <div class="deco d-heart6">🤎</div>
+      <div class="deco d-leaf6">🌿</div>
+      <div class="deco d-bow5">🎀</div>
+      <div class="washi w-msg1"></div>
+
+      <h2 class="sec-title">Balas surat aku dong 💌</h2>
+      <p class="sec-sub">tulis apa aja, nanti muncul di sini kayak sticky note ♡</p>
+
+      <div class="msg-board" id="msgBoard"></div>
+
+      <div class="msg-form">
+        <textarea id="msgInput" placeholder="Tulis sesuatu buat Kekey..." rows="3" maxlength="500"></textarea>
+        <button id="msgSend" class="btn-send">kirim 💌</button>
+      </div>
+    </section>
+
+    <!-- ═══════ CLOSING ═══════ -->
+    <section class="page closing-page" id="closing">
+      <div class="paper-bg bg-gingham-juniper"></div>
+      <div class="gingham-edge gingham-top"></div>
+      <div class="gingham-edge gingham-bottom"></div>
+
+      <div class="deco d-bow6">🎀</div>
+      <div class="deco d-leaf7">🌿</div>
+      <div class="deco d-star9">★</div>
+      <div class="deco d-star10">✦</div>
+      <div class="deco d-heart7">🤍</div>
+      <div class="deco d-heart8">🤎</div>
+      <div class="deco d-sparkle3">✧</div>
+      <div class="washi w-close1"></div>
+      <div class="washi w-close2"></div>
+      <div class="washi w-close3"></div>
+
+      <div class="close-body">
+        <p class="close-small">once again...</p>
+        <h2 class="close-title">Happy Birthday</h2>
+        <p class="close-name">Rayi Rizkia</p>
+        <p class="close-date">28 · 10 · 2004</p>
+        <div class="close-patches">
+          <span class="patch p-bow">loved</span>
+          <span class="patch p-leaf">blessed</span>
+          <span class="patch p-candle">celebrated</span>
+          <span class="patch p-juniper">cherished</span>
+          <span class="patch p-wood">adored</span>
+        </div>
+        <p class="close-love">made with love by <span class="close-kekey">kekey</span> ♡</p>
+      </div>
+    </section>
+
+  </div>
+
+  <!-- ════ AUDIO ELEMENT (SERTA MULIA BY SAL PRIADI — USER FILE) ════ -->
+  <audio id="bgmAudio" src="assets/sal.mp3" preload="auto"></audio>
+
+  <!-- ════ VINYL RECORD PLAYER WIDGET (SAL PRIADI — SERTA MULIA) ════ -->
+  <div class="vinyl-player-widget" id="vinylWidget" title="Putar Serta Mulia - Sal Priadi">
+    <div class="vinyl-container">
+      <div class="vinyl-disc" id="vinylDisc">
+        <div class="vinyl-center-label">
+          <span class="vinyl-song-title">SERTA MULIA</span>
+          <span class="vinyl-artist">Sal Priadi</span>
+        </div>
+      </div>
+      <div class="vinyl-tonearm" id="vinylTonearm"></div>
+    </div>
+    <div class="vinyl-info-box">
+      <div class="vinyl-track-text">
+        <span class="track-title">Serta Mulia</span>
+        <span class="track-artist">Sal Priadi ♡</span>
+      </div>
+      <button id="vinylPlayBtn" class="btn-vinyl-play" type="button">
+        <span id="playIcon">▶</span> <span id="playText">Putar Lagu</span>
+      </button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
